@@ -25,8 +25,8 @@ val buttonNewAccColor = Color(0xFF242956)
 val buttonShadowNewAccColor = Color(0xFF1D2145)
 
 // color gradient button login
-val secondButtonColor = Color(0xFFFF9064)
 val firstButtonColor = Color(0xFFD54646)
+val secondButtonColor = Color(0xFFFF9064)
 val bolderButtonGradientColor = Color(0xFF9E3332)
 val shadowButtonGradientColor = Color(0xFF9E3332)
 

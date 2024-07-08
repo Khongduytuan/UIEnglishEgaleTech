@@ -1,13 +1,11 @@
 package com.eagletech.uienglishegaletech.ui.theme.screens
 
-import android.inputmethodservice.Keyboard.Row
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.interaction.MutableInteractionSource
-import androidx.compose.foundation.interaction.collectIsPressedAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -18,14 +16,13 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -38,13 +35,11 @@ import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.paint
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -53,10 +48,9 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import com.eagletech.uienglishegaletech.R
@@ -211,7 +205,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             }
         )
         // text info app
-        RowTextAction(
+        RowTextInfo(
             textForgetPass = "Hotline liên hệ: 098611263",
             textSearchResult = "Website: ups.edu.vn",
             lineText2 = 1,
@@ -231,7 +225,155 @@ fun LoginScreen(modifier: Modifier = Modifier) {
 }
 
 @Composable
+fun LoginScreen2(modifier: Modifier = Modifier, scrollState: ScrollState) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .verticalScroll(scrollState)
+            .paint(
+                painterResource(id = R.drawable.background),
+                contentScale = ContentScale.FillBounds
+            )
+            .padding(top = 200.dp)
+    ) {
+        // size logo
+        val sizeLogo = LocalConfiguration.current.screenWidthDp * 0.6
+
+        Image(
+            painterResource(id = R.drawable.logo),
+            contentDescription = "Logo app",
+            modifier = Modifier
+                .size(height = (sizeLogo / 2).dp, width = sizeLogo.dp)
+        )
+
+        var numberPhone by rememberSaveable {
+            mutableStateOf("")
+        }
+        var password by rememberSaveable {
+            mutableStateOf("")
+        }
+        InputOutlineText(
+            modifier = Modifier
+                .padding(horizontal = 24.dp, vertical = 4.dp),
+
+            hintText = "Số điện thoại tài khoản",
+            value = numberPhone,
+            icon = Icons.Default.Call,
+            cursorColor = cursorColor,
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
+        ) {
+            numberPhone = it
+        }
+
+        InputOutlineText(
+            modifier = Modifier
+                .padding(horizontal = 24.dp, vertical = 4.dp),
+            hintText = "Mật khẩu",
+            icon = Icons.Default.Lock,
+            value = password,
+            cursorColor = cursorColor,
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
+        ) {
+            password = it
+        }
+
+        val gradientButtonLogin = Brush.horizontalGradient(
+            colors = listOf(
+                firstButtonColor,
+                secondButtonColor
+            )
+        )
+        val gradientButtonNewAcc = Brush.horizontalGradient(
+            colors = listOf(
+                buttonNewAccColor,
+                buttonNewAccColor
+            )
+        )
+
+        ButtonItem(
+            nameButton = "Đăng nhập",
+            textColor = Color.White,
+            gradient = gradientButtonLogin,
+            shadowColor = shadowButtonGradientColor,
+            shadowBottomOffset = 8f,
+            onClick = {}
+        )
+
+        RowTextAction(
+            textForgetPass = "Quên mật khẩu?",
+            textSearchResult = "Tra cứu kết quả >",
+            lineText2 = 1,
+            lineText1 = 1,
+            onClickTextForgetPass = {},
+            onClickTextSearchResult = {},
+            textStyle = MaterialTheme
+                .typography
+                .displaySmall
+                .copy(color = Color.White)
+        )
+
+        ButtonItem(
+            nameButton = "Tài khoản mới",
+            textColor = Color.White,
+            gradient = gradientButtonNewAcc,
+            shadowColor = buttonShadowNewAccColor,
+            shadowBottomOffset = 8f,
+            onClick = {},
+        )
+        // text info app
+        RowTextInfo(
+            textForgetPass = "Hotline liên hệ: 098611263",
+            textSearchResult = "Website: ups.edu.vn",
+            lineText2 = 1,
+            lineText1 = 2,
+            textStyle = MaterialTheme.typography.labelSmall.copy(color = Color.White.copy(0.8f)),
+            onClickTextForgetPass = {},
+            onClickTextSearchResult = {},
+        )
+
+
+    }
+
+}
+
+@Composable
 fun RowTextAction(
+    modifier: Modifier = Modifier,
+    textForgetPass: String,
+    textSearchResult: String,
+    lineText1: Int,
+    lineText2: Int,
+    textStyle: TextStyle,
+    onClickTextForgetPass: () -> Unit,
+    onClickTextSearchResult: () -> Unit
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(horizontal = 24.dp, vertical = 4.dp),
+        horizontalArrangement = Arrangement.SpaceBetween
+
+    ) {
+        TextButton(onClick = { onClickTextForgetPass() }) {
+            Text(
+                text = textForgetPass,
+                style = textStyle,
+                maxLines = lineText1
+            )
+        }
+        TextButton(onClick = { onClickTextSearchResult() }) {
+            Text(
+                text = textSearchResult,
+                style = textStyle,
+                maxLines = lineText2
+            )
+        }
+
+    }
+}
+
+@Composable
+fun RowTextInfo(
     modifier: Modifier = Modifier,
     textForgetPass: String,
     textSearchResult: String,
@@ -290,7 +432,7 @@ fun InputOutlineText(
     value: String,
     keyboardOptions: KeyboardOptions,
     hintText: String,
-    icon: ImageVector,
+    icon: ImageVector? = null,
     cursorColor: Color,
     onValueChange: (String) -> Unit
 ) {
@@ -300,7 +442,7 @@ fun InputOutlineText(
                 border = BorderStroke(1.dp, color = bolderInputColor.copy(0.2f)),
                 shape = RoundedCornerShape(12.dp)
             ),
-        textStyle = MaterialTheme.typography.titleSmall.copy(color = textInputColor),
+        textStyle = MaterialTheme.typography.labelMedium.copy(color = textInputColor, lineHeight = 20.sp),
         singleLine = true,
         keyboardOptions = keyboardOptions,
         value = value,
@@ -311,16 +453,19 @@ fun InputOutlineText(
         onValueChange = onValueChange,
         shape = RoundedCornerShape(12.dp),
         trailingIcon = {
-            Icon(
-                imageVector = icon,
-                contentDescription = "",
-                tint = tintIconColor
-            )
+            icon?.let { it ->
+                Icon(
+                    imageVector = it,
+                    contentDescription = "",
+                    tint = tintIconColor
+                )
+            }
+
         },
         placeholder = {
             Text(
                 text = hintText,
-                style = MaterialTheme.typography.titleSmall.copy(
+                style = MaterialTheme.typography.labelMedium.copy(
                     color = hintTextColor
                 )
             )
@@ -472,13 +617,13 @@ fun PreviewButtonLoginWithShadow2() {
     )
 }
 
-@Preview(showBackground = true, showSystemUi = true)
-@Composable
-fun LoginScreenPreview(modifier: Modifier = Modifier) {
-    UIEnglishEgaleTechTheme {
-        LoginScreen()
-    }
-
-}
+//@Preview(showBackground = true, showSystemUi = true)
+//@Composable
+//fun LoginScreenPreview(modifier: Modifier = Modifier) {
+//    UIEnglishEgaleTechTheme {
+//        LoginScreen()
+//    }
+//
+//}
 
 
