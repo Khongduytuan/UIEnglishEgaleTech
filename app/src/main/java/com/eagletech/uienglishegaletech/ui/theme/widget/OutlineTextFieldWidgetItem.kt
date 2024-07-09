@@ -1,49 +1,86 @@
 package com.eagletech.uienglishegaletech.ui.theme.widget
 
+
 import android.graphics.drawable.Icon
-import androidx.annotation.DrawableRes
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.border
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.eagletech.uienglishegaletech.ui.theme.Color000000
+import com.eagletech.uienglishegaletech.ui.theme.Color111245
+import com.eagletech.uienglishegaletech.ui.theme.Color20227E
+import com.eagletech.uienglishegaletech.ui.theme.Color78799C
+import com.eagletech.uienglishegaletech.ui.theme.Color9E3332
+import com.eagletech.uienglishegaletech.ui.theme.ColorFFFFFF
 import com.eagletech.uienglishegaletech.ui.theme.UIEnglishEgaleTechTheme
 
+
+
+
+
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun OutlineTextFieldWidgetItem(
+fun InputOutlineText(
     modifier: Modifier = Modifier,
-    icon: Int? = null,
     value: String,
+    keyboardOptions: KeyboardOptions,
+    hintText: String,
+    icon: ImageVector? = null,
+    cursorColor: Color,
     onValueChange: (String) -> Unit
 ) {
-    OutlinedTextField(value = value, onValueChange = onValueChange)
-}
+    OutlinedTextField(
+        modifier = modifier
+            .border(
+                border = BorderStroke(1.dp, color = Color000000.copy(0.2f)),
+                shape = RoundedCornerShape(8.dp)
+            ),
+        textStyle = MaterialTheme.typography.labelMedium.copy(
+            textAlign = TextAlign.Start,
+            lineHeight = 17.sp,
+            color = Color111245,
+        ),
+        singleLine = true,
 
-@Composable
-fun OutlineTextFieldWidgetItem(
-    modifier: Modifier = Modifier,
-    icon: Int? = null
-) {
+        keyboardOptions = keyboardOptions,
+        value = value,
+        colors = TextFieldDefaults.textFieldColors(
+            containerColor = Color.White,
+            cursorColor = cursorColor
+        ),
+        onValueChange = onValueChange,
+        shape = RoundedCornerShape(8.dp),
+        trailingIcon = {
+            icon?.let {
+                Icon(
+                    imageVector = it,
+                    contentDescription = "",
+                    tint = Color20227E
+                )
+            }
 
-    var value by rememberSaveable {
-        mutableStateOf("")
-    }
-    OutlinedTextField(value = value, onValueChange = {
-        value = it
-    }, modifier = Modifier.height(50.dp).fillMaxWidth())
+        },
 
-}
-
-@Preview(showBackground = true, showSystemUi = true)
-@Composable
-fun OutlineTextFieldWidgetItemPreview(modifier: Modifier = Modifier) {
-    UIEnglishEgaleTechTheme {
-       OutlineTextFieldWidgetItem()
-    }
+        placeholder = {
+            Text(
+                text = hintText,
+                style = MaterialTheme.typography.labelMedium.copy(color = Color78799C)
+            )
+        }
+    )
 }

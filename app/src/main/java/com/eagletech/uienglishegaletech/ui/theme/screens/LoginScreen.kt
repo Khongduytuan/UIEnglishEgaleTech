@@ -54,17 +54,18 @@ import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import com.eagletech.uienglishegaletech.R
+import com.eagletech.uienglishegaletech.ui.theme.Color111245
+import com.eagletech.uienglishegaletech.ui.theme.Color1D2145
+import com.eagletech.uienglishegaletech.ui.theme.Color20227E
+import com.eagletech.uienglishegaletech.ui.theme.Color242956
+import com.eagletech.uienglishegaletech.ui.theme.Color78799C
+import com.eagletech.uienglishegaletech.ui.theme.Color9E3332
+import com.eagletech.uienglishegaletech.ui.theme.ColorD54646
+import com.eagletech.uienglishegaletech.ui.theme.ColorE8E9F5
+import com.eagletech.uienglishegaletech.ui.theme.ColorF2564D
+import com.eagletech.uienglishegaletech.ui.theme.ColorFF9064
 import com.eagletech.uienglishegaletech.ui.theme.UIEnglishEgaleTechTheme
-import com.eagletech.uienglishegaletech.ui.theme.bolderInputColor
-import com.eagletech.uienglishegaletech.ui.theme.buttonNewAccColor
-import com.eagletech.uienglishegaletech.ui.theme.buttonShadowNewAccColor
-import com.eagletech.uienglishegaletech.ui.theme.cursorColor
-import com.eagletech.uienglishegaletech.ui.theme.firstButtonColor
-import com.eagletech.uienglishegaletech.ui.theme.hintTextColor
-import com.eagletech.uienglishegaletech.ui.theme.secondButtonColor
-import com.eagletech.uienglishegaletech.ui.theme.shadowButtonGradientColor
-import com.eagletech.uienglishegaletech.ui.theme.textInputColor
-import com.eagletech.uienglishegaletech.ui.theme.tintIconColor
+import com.eagletech.uienglishegaletech.ui.theme.widget.InputOutlineText
 
 @Composable
 fun LoginScreen(modifier: Modifier = Modifier) {
@@ -120,7 +121,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             hintText = "Số điện thoại tài khoản",
             value = numberPhone,
             icon = Icons.Default.Call,
-            cursorColor = cursorColor,
+            cursorColor = ColorF2564D,
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
         ) {
             numberPhone = it
@@ -139,7 +140,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             hintText = "Mật khẩu",
             icon = Icons.Default.Lock,
             value = password,
-            cursorColor = cursorColor,
+            cursorColor = ColorF2564D,
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
         ) {
             password = it
@@ -147,14 +148,14 @@ fun LoginScreen(modifier: Modifier = Modifier) {
 
         val gradientButtonLogin = Brush.horizontalGradient(
             colors = listOf(
-                firstButtonColor,
-                secondButtonColor
+                ColorD54646,
+                ColorFF9064
             )
         )
         val gradientButtonNewAcc = Brush.horizontalGradient(
             colors = listOf(
-                buttonNewAccColor,
-                buttonNewAccColor
+                Color242956,
+                Color242956
             )
         )
 
@@ -162,7 +163,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             nameButton = "Đăng nhập",
             textColor = Color.White,
             gradient = gradientButtonLogin,
-            shadowColor = shadowButtonGradientColor,
+            shadowColor = Color9E3332,
             shadowBottomOffset = 8f,
             modifier = Modifier.constrainAs(buttonLogin) {
                 top.linkTo(inputPassword.bottom, margin = 20.dp)
@@ -194,7 +195,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             nameButton = "Tài khoản mới",
             textColor = Color.White,
             gradient = gradientButtonNewAcc,
-            shadowColor = buttonShadowNewAccColor,
+            shadowColor = Color1D2145,
             shadowBottomOffset = 8f,
             onClick = {},
             modifier = Modifier.constrainAs(buttonNewAcc) {
@@ -259,7 +260,7 @@ fun LoginScreen2(modifier: Modifier = Modifier, scrollState: ScrollState) {
             hintText = "Số điện thoại tài khoản",
             value = numberPhone,
             icon = Icons.Default.Call,
-            cursorColor = cursorColor,
+            cursorColor =ColorF2564D,
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
         ) {
             numberPhone = it
@@ -271,7 +272,7 @@ fun LoginScreen2(modifier: Modifier = Modifier, scrollState: ScrollState) {
             hintText = "Mật khẩu",
             icon = Icons.Default.Lock,
             value = password,
-            cursorColor = cursorColor,
+            cursorColor = ColorF2564D,
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
         ) {
             password = it
@@ -279,14 +280,14 @@ fun LoginScreen2(modifier: Modifier = Modifier, scrollState: ScrollState) {
 
         val gradientButtonLogin = Brush.horizontalGradient(
             colors = listOf(
-                firstButtonColor,
-                secondButtonColor
+                ColorD54646,
+                ColorFF9064
             )
         )
         val gradientButtonNewAcc = Brush.horizontalGradient(
             colors = listOf(
-                buttonNewAccColor,
-                buttonNewAccColor
+                Color242956,
+                Color242956
             )
         )
 
@@ -294,7 +295,7 @@ fun LoginScreen2(modifier: Modifier = Modifier, scrollState: ScrollState) {
             nameButton = "Đăng nhập",
             textColor = Color.White,
             gradient = gradientButtonLogin,
-            shadowColor = shadowButtonGradientColor,
+            shadowColor = Color9E3332,
             shadowBottomOffset = 8f,
             onClick = {}
         )
@@ -316,7 +317,7 @@ fun LoginScreen2(modifier: Modifier = Modifier, scrollState: ScrollState) {
             nameButton = "Tài khoản mới",
             textColor = Color.White,
             gradient = gradientButtonNewAcc,
-            shadowColor = buttonShadowNewAccColor,
+            shadowColor = Color1D2145,
             shadowBottomOffset = 8f,
             onClick = {},
         )
@@ -425,53 +426,7 @@ fun RowTextActionPreview(modifier: Modifier = Modifier) {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun InputOutlineText(
-    modifier: Modifier = Modifier,
-    value: String,
-    keyboardOptions: KeyboardOptions,
-    hintText: String,
-    icon: ImageVector? = null,
-    cursorColor: Color,
-    onValueChange: (String) -> Unit
-) {
-    OutlinedTextField(
-        modifier = modifier
-            .border(
-                border = BorderStroke(1.dp, color = bolderInputColor.copy(0.2f)),
-                shape = RoundedCornerShape(12.dp)
-            ),
-        textStyle = MaterialTheme.typography.labelMedium.copy(color = textInputColor, lineHeight = 20.sp),
-        singleLine = true,
-        keyboardOptions = keyboardOptions,
-        value = value,
-        colors = TextFieldDefaults.textFieldColors(
-            containerColor = Color.White,
-            cursorColor = cursorColor
-        ),
-        onValueChange = onValueChange,
-        shape = RoundedCornerShape(12.dp),
-        trailingIcon = {
-            icon?.let { it ->
-                Icon(
-                    imageVector = it,
-                    contentDescription = "",
-                    tint = tintIconColor
-                )
-            }
 
-        },
-        placeholder = {
-            Text(
-                text = hintText,
-                style = MaterialTheme.typography.labelMedium.copy(
-                    color = hintTextColor
-                )
-            )
-        }
-    )
-}
 
 @Composable
 fun ButtonItem(
@@ -584,15 +539,15 @@ fun ButtonShadowOnlyBottom(
 fun ButtonItemPreview(modifier: Modifier = Modifier) {
     val gradient = Brush.horizontalGradient(
         colors = listOf(
-            firstButtonColor,
-            secondButtonColor
+            ColorD54646,
+            ColorFF9064
         )
     )
     ButtonItem(
         nameButton = "Login",
         textColor = Color.White,
         gradient = gradient,
-        shadowColor = shadowButtonGradientColor,
+        shadowColor = Color9E3332,
         shadowBottomOffset = 8f,
         onClick = { }
     )
@@ -603,27 +558,27 @@ fun ButtonItemPreview(modifier: Modifier = Modifier) {
 fun PreviewButtonLoginWithShadow2() {
     val gradient = Brush.horizontalGradient(
         colors = listOf(
-            firstButtonColor,
-            secondButtonColor
+            ColorD54646,
+            ColorFF9064
         )
     )
     ButtonShadowOnlyBottom(
         nameButton = "Login",
         textColor = Color.White,
         gradient = gradient,
-        shadowColor = shadowButtonGradientColor,
+        shadowColor = Color9E3332,
         shadowBottomOffset = 8f,
         onClick = { }
     )
 }
 
-//@Preview(showBackground = true, showSystemUi = true)
-//@Composable
-//fun LoginScreenPreview(modifier: Modifier = Modifier) {
-//    UIEnglishEgaleTechTheme {
-//        LoginScreen()
-//    }
-//
-//}
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun LoginScreenPreview(modifier: Modifier = Modifier) {
+    UIEnglishEgaleTechTheme {
+        LoginScreen()
+    }
+
+}
 
 
