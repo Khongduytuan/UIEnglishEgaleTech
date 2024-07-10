@@ -44,7 +44,7 @@ import com.eagletech.uienglishegaletech.ui.theme.ColorD54646
 import com.eagletech.uienglishegaletech.ui.theme.ColorFF9064
 import com.eagletech.uienglishegaletech.ui.theme.ColorFFFFFF
 import com.eagletech.uienglishegaletech.ui.theme.UIEnglishEgaleTechTheme
-import com.eagletech.uienglishegaletech.ui.theme.screens.ButtonItem
+import com.eagletech.uienglishegaletech.ui.theme.screens.signIn.ButtonItem
 
 /*
 
