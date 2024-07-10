@@ -1,174 +1,170 @@
 [
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_extrabolditalic.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_extrabolditalic.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_extrabolditalic.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_extrabolditalic.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_bolditalic.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_bolditalic.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_extralightitalic.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_extralightitalic.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nnito_blackitalic.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nnito_blackitalic.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\raw_location.json.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\raw\\location.json"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_italic.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_italic.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_bolditalic.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_bolditalic.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\mipmap-xhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_lightitalic.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_lightitalic.ttf"
-    },
-    {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\drawable_button_back.png.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\drawable\\button_back.png"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/xml_backup_rules.xml.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/xml/backup_rules.xml"
     },
     {
         "merged": "com.eagletech.uienglishegaletech.app-debug-53:/drawable_rectangle.png.flat",
         "source": "com.eagletech.uienglishegaletech.app-main-55:/drawable/rectangle.png"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\drawable_illus3.png.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\drawable\\illus3.png"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_seminbolditalic.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_seminbolditalic.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_extrabold.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_extrabold.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_extralightitalic.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_extralightitalic.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_seminbolditalic.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_seminbolditalic.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_extrabold.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_extrabold.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/drawable_illus4.png.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/drawable/illus4.png"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\drawable_illus4.png.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\drawable\\illus4.png"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/drawable_illus3.png.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/drawable/illus3.png"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_light.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_light.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_bold.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_bold.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_mediumitalic.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_mediumitalic.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_italic.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_italic.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_medium.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_medium.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_semibold.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_semibold.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_light.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_light.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/xml_data_extraction_rules.xml.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nnito_blackitalic.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nnito_blackitalic.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\drawable_background.png.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\drawable\\background.png"
-    },
-    {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\xml\\data_extraction_rules.xml"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
         "merged": "com.eagletech.uienglishegaletech.app-debug-53:/drawable_exit.png.flat",
         "source": "com.eagletech.uienglishegaletech.app-main-55:/drawable/exit.png"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\drawable\\logo.png"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_extralight.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_extralight.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_mediumitalic.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_mediumitalic.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_black.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_black.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_black.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_black.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_regular.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_regular.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_extralight.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_extralight.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_bold.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/drawable_background.png.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/drawable/background.png"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_lightitalic.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_lightitalic.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_semibold.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_semibold.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/font_nunito_medium.ttf.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/font/nunito_medium.ttf"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\drawable_illus.png.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\drawable\\illus.png"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/drawable_logo.png.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/drawable/logo.png"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\drawable_illus2.png.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\drawable\\illus2.png"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/drawable_illus.png.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/drawable/illus.png"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\xml\\backup_rules.xml"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/raw_location.json.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/raw/location.json"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\raw_test4.mp4.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\raw\\test4.mp4"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-debug-53:\\font_nunito_regular.ttf.flat",
-        "source": "C:\\Users\\QUANG LONG\\.gradle\\daemon\\8.7\\com.eagletech.uienglishegaletech.app-main-55:\\font\\nunito_regular.ttf"
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/drawable_illus2.png.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/drawable/illus2.png"
+    },
+    {
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.eagletech.uienglishegaletech.app-debug-53:/drawable_button_back.png.flat",
+        "source": "com.eagletech.uienglishegaletech.app-main-55:/drawable/button_back.png"
     }
 ]

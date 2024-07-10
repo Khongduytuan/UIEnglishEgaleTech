@@ -26,6 +26,7 @@ val Color000000 = Color(0xff000000)
 // color gradient button login
 val ColorD54646 = Color(0xFFD54646)
 val Color9E3332 = Color(0xFF9E3332)
+val Color353A75 = Color(0xFF353A75)
 
 // color cursor Color in Input TextField
 val ColorF2564D = Color(0xFFF2564D)

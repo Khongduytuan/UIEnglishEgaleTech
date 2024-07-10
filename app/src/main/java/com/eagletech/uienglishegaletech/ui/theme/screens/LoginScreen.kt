@@ -49,6 +49,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
@@ -165,6 +166,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             gradient = gradientButtonLogin,
             shadowColor = Color9E3332,
             shadowBottomOffset = 8f,
+            paddingButton = 24.dp,
             modifier = Modifier.constrainAs(buttonLogin) {
                 top.linkTo(inputPassword.bottom, margin = 20.dp)
                 start.linkTo(parent.start)
@@ -198,6 +200,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             shadowColor = Color1D2145,
             shadowBottomOffset = 8f,
             onClick = {},
+            paddingButton = 24.dp,
             modifier = Modifier.constrainAs(buttonNewAcc) {
                 bottom.linkTo(textRowInfo.top)
                 start.linkTo(parent.start)
@@ -297,6 +300,7 @@ fun LoginScreen2(modifier: Modifier = Modifier, scrollState: ScrollState) {
             gradient = gradientButtonLogin,
             shadowColor = Color9E3332,
             shadowBottomOffset = 8f,
+            paddingButton = 24.dp,
             onClick = {}
         )
 
@@ -319,6 +323,7 @@ fun LoginScreen2(modifier: Modifier = Modifier, scrollState: ScrollState) {
             gradient = gradientButtonNewAcc,
             shadowColor = Color1D2145,
             shadowBottomOffset = 8f,
+            paddingButton = 24.dp,
             onClick = {},
         )
         // text info app
@@ -435,6 +440,7 @@ fun ButtonItem(
     textColor: Color,
     gradient: Brush,
     shadowColor: Color,
+    paddingButton: Dp,
     shadowBottomOffset: Float,
     buttonHeight: Float = 50f,
     shape: RoundedCornerShape = RoundedCornerShape(8.dp),
@@ -443,7 +449,7 @@ fun ButtonItem(
 
     Box(
         modifier = modifier
-            .padding(horizontal = 24.dp)
+            .padding(horizontal = paddingButton)
             .background(color = shadowColor, shape = shape)
             .fillMaxWidth()
             .height(buttonHeight.dp + shadowBottomOffset.dp)
@@ -534,24 +540,24 @@ fun ButtonShadowOnlyBottom(
     }
 }
 
-@Preview(showBackground = true, showSystemUi = true)
-@Composable
-fun ButtonItemPreview(modifier: Modifier = Modifier) {
-    val gradient = Brush.horizontalGradient(
-        colors = listOf(
-            ColorD54646,
-            ColorFF9064
-        )
-    )
-    ButtonItem(
-        nameButton = "Login",
-        textColor = Color.White,
-        gradient = gradient,
-        shadowColor = Color9E3332,
-        shadowBottomOffset = 8f,
-        onClick = { }
-    )
-}
+//@Preview(showBackground = true, showSystemUi = true)
+//@Composable
+//fun ButtonItemPreview(modifier: Modifier = Modifier) {
+//    val gradient = Brush.horizontalGradient(
+//        colors = listOf(
+//            ColorD54646,
+//            ColorFF9064
+//        )
+//    )
+//    ButtonItem(
+//        nameButton = "Login",
+//        textColor = Color.White,
+//        gradient = gradient,
+//        shadowColor = Color9E3332,
+//        shadowBottomOffset = 8f,
+//        onClick = { }
+//    )
+//}
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
