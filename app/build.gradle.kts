@@ -68,5 +68,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.androidx.constraintlayout.compose)
-    implementation ("com.airbnb.android:lottie-compose:5.2.0")
+    // OTP field
+    implementation (libs.lottie.compose)
+    // systemUIController(Color StatusBar)
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
 }
