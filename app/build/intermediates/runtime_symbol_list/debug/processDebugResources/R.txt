@@ -673,8 +673,9 @@ int drawable notify_panel_notification_icon_bg 0x7f070076
 int drawable rectangle 0x7f070077
 int drawable rectangular_vignette_bottom 0x7f070078
 int drawable rectangular_vignette_top 0x7f070079
-int drawable tooltip_frame_dark 0x7f07007a
-int drawable tooltip_frame_light 0x7f07007b
+int drawable refresh 0x7f07007a
+int drawable tooltip_frame_dark 0x7f07007b
+int drawable tooltip_frame_light 0x7f07007c
 int font nnito_blackitalic 0x7f080000
 int font nunito_black 0x7f080001
 int font nunito_bold 0x7f080002

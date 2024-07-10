@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
             UIEnglishEgaleTechTheme {
 
 //               LoginScreen()
-                SignUp03()
+                SignUp03(numberPhone = "0333761503")
 
             }
         }

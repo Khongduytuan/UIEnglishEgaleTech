@@ -18,6 +18,7 @@ drawable illus3
 drawable illus4
 drawable logo
 drawable rectangle
+drawable refresh
 font nnito_blackitalic
 font nunito_black
 font nunito_bold
