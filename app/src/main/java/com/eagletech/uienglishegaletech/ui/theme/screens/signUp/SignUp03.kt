@@ -2,6 +2,7 @@ package com.eagletech.uienglishegaletech.ui.theme.screens.signUp
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -11,13 +12,16 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.SideEffect
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -36,16 +40,18 @@ import com.eagletech.uienglishegaletech.R
 import com.eagletech.uienglishegaletech.ui.theme.Color282BA0
 import com.eagletech.uienglishegaletech.ui.theme.Color4553B7
 import com.eagletech.uienglishegaletech.ui.theme.Color78799C
+import com.eagletech.uienglishegaletech.ui.theme.ColorF2564D
 import com.eagletech.uienglishegaletech.ui.theme.ColorFFFFFF
 import com.eagletech.uienglishegaletech.ui.theme.UIEnglishEgaleTechTheme
 import com.eagletech.uienglishegaletech.ui.theme.widget.OutlinedOtpTextField
-import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.eagletech.uienglishegaletech.ui.theme.widget.TopAppBarItem
+import kotlinx.coroutines.delay
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SignUp03(
     modifier: Modifier = Modifier,
-    numberPhone: String,
+    numberPhone: String
 ) {
 
     Scaffold(
@@ -53,6 +59,8 @@ fun SignUp03(
             TopAppBarItem(
                 titleTopBar = "Xác thực OTP",
                 isBorderBottom = true,
+                isShowButtonNext = true,
+                onClickNextButton = {},
                 onClick = {}
             )
         }
@@ -80,6 +88,7 @@ fun SignUp03(
                 mutableStateOf("")
             }
             Spacer(modifier = Modifier.height(24.dp))
+
             OutlinedOtpTextField(
                 value = valueOTP,
                 onValueChange = { it ->
@@ -89,103 +98,107 @@ fun SignUp03(
                 clearFocusWhenFilled = true
             )
             Spacer(modifier = Modifier.height(24.dp))
-            Text(
-                modifier = modifier.padding(horizontal = 18.dp),
-                text = "Nếu không nhận được bạn có thể yêu cầu gửi lại trong vòng : 00:59 giây",
-                style = MaterialTheme
-                    .typography.titleMedium.copy(
-                        lineHeight = 17.sp,
-                        fontFamily = FontFamily(Font(R.font.nunito_medium))
+            var secondsLeft by remember { mutableStateOf(59) }
+            var showResendButton by remember { mutableStateOf(false) }
+
+            LaunchedEffect(key1 = secondsLeft) {
+                if (secondsLeft > 0) {
+                    delay(1000L)
+                    secondsLeft--
+                } else {
+                    showResendButton = true
+                }
+            }
+            if (!showResendButton) {
+                Text(
+                    modifier = modifier.padding(horizontal = 18.dp),
+                    text = "Nếu không nhận được bạn có thể yêu cầu gửi lại trong vòng: 00:${
+                        secondsLeft.toString().padStart(2, '0')
+                    } giây",
+                    style = MaterialTheme
+                        .typography.titleMedium.copy(
+                            lineHeight = 17.sp,
+                            fontFamily = FontFamily(Font(R.font.nunito_medium))
                         ),
-                color = Color78799C
-            )
-
-
+                    color = Color78799C
+                )
+            } else {
+                Text(
+                    modifier = modifier.padding(horizontal = 18.dp),
+                    text = "Bạn có thể yêu cầu gửi lại mã OTP",
+                    style = MaterialTheme
+                        .typography.titleMedium.copy(
+                            lineHeight = 17.sp,
+                            fontFamily = FontFamily(Font(R.font.nunito_medium))
+                        ),
+                    color = Color78799C
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                RowRefreshItem {
+                    // Gửi lại OTP
+                }
+            }
         }
-
     }
-
 }
 
 @Composable
-fun RowRefreshItem(modifier: Modifier = Modifier) {
+fun RowRefreshItem(
+    modifier: Modifier = Modifier,
+    onClick: () -> Unit
+) {
 
-    Row(modifier = modifier) {
-        Text(text = "Gửi lại", )
+    Row(
+        modifier = modifier
+            .wrapContentSize()
+            .clickable {
+                onClick()
+            },
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.Center
+    ) {
+        Text(
+            text = "Gửi lại", style = MaterialTheme.typography.bodyMedium.copy(
+                fontFamily = FontFamily(Font(R.font.nunito_bold)),
+                lineHeight = 15.sp,
+            ),
+            color = ColorF2564D
+        )
+        Spacer(modifier = Modifier.width(4.dp))
+        Image(
+            painter = painterResource(id = R.drawable.refresh),
+            contentDescription = "Image Refresh",
+            modifier = modifier.size(12.dp)
+        )
     }
-    
+
 }
+
+@Preview(name = "RowRefreshItemPreview", showBackground = true, showSystemUi = true)
+@Composable
+fun RowRefreshItemPreview(modifier: Modifier = Modifier) {
+    UIEnglishEgaleTechTheme {
+        RowRefreshItem {
+
+        }
+    }
+}
+
 @Preview(name = "TopAppBarItemPreview", showBackground = true, showSystemUi = true)
 @Composable
 fun TopAppBarItemPreview(modifier: Modifier = Modifier) {
     UIEnglishEgaleTechTheme {
-        TopAppBarItem(titleTopBar = "Hello", isBorderBottom = true) {
-        }
+        TopAppBarItem(
+            titleTopBar = "Hello",
+            isBorderBottom = true,
+            isShowButtonNext = true,
+            onClickNextButton = {
+
+            },
+            onClick = {})
     }
 }
 
-
-@Composable
-fun TopAppBarItem(
-    modifier: Modifier = Modifier,
-    titleTopBar: String? = null,
-    isBorderBottom: Boolean = false,
-    onClick: () -> Unit
-) {
-    ConstraintLayout(
-        modifier = modifier
-            .fillMaxWidth()
-            .background(color = Color4553B7)
-            .padding(top = 20.dp)
-    ) {
-        val (buttonBack, title, borderBottom) = createRefs()
-        IconButton(
-            onClick = { onClick },
-            modifier = modifier.constrainAs(buttonBack) {
-                top.linkTo(parent.top)
-                start.linkTo(parent.start)
-                bottom.linkTo(parent.bottom)
-            }
-        ) {
-            Image(
-                painter = painterResource(id = R.drawable.button_back),
-                modifier = modifier
-                    .padding(4.dp)
-                    .fillMaxSize(),
-                contentDescription = "Button Back"
-            )
-        }
-        titleTopBar?.let {
-            Text(
-                text = titleTopBar,
-                style = MaterialTheme.typography.titleLarge.copy(
-                    fontSize = 18.sp,
-                    lineHeight = 19.sp
-                ),
-                color = ColorFFFFFF,
-                modifier = modifier.constrainAs(title) {
-                    top.linkTo(parent.top)
-                    start.linkTo(parent.start)
-                    end.linkTo(parent.end)
-                    bottom.linkTo(parent.bottom)
-                }
-            )
-        }
-        if (isBorderBottom)
-            Spacer(modifier = modifier
-                .fillMaxWidth()
-                .height(1.dp)
-                .background(color = Color282BA0)
-                .constrainAs(borderBottom) {
-                    bottom.linkTo(parent.bottom)
-                    start.linkTo(parent.start)
-                    end.linkTo(parent.end)
-                }
-            )
-
-    }
-
-}
 
 @Preview(name = "SignUp03Preview", showBackground = true, showSystemUi = true)
 @Composable

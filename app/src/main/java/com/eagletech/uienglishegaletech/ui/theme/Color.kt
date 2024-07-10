@@ -1,5 +1,6 @@
 package com.eagletech.uienglishegaletech.ui.theme
 
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 
 val ColorD0BCFF = Color(0xFFD0BCFF)
@@ -34,4 +35,10 @@ val ColorF2564D = Color(0xFFF2564D)
 val ColorCFD0E4 = Color(0xffCFD0E4)
 val ColorEAECF3 = Color(0xffEAECF3)
 
+val gradient = Brush.horizontalGradient(
+    colors = listOf(
+        ColorD54646,
+        ColorFF9064
+    )
+)
 

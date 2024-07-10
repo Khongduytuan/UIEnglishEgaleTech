@@ -674,6 +674,7 @@ drawable notify_panel_notification_icon_bg
 drawable rectangle
 drawable rectangular_vignette_bottom
 drawable rectangular_vignette_top
+drawable refresh
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font nnito_blackitalic
