@@ -45,6 +45,7 @@ fun TopAppBarItem(
     modifier: Modifier = Modifier,
     titleTopBar: String? = null,
     isBorderBottom: Boolean = false,
+    isShowButtonBack: Boolean = true,
     isShowButtonNext: Boolean = false,
     onClickNextButton: () -> Unit,
     onClick: () -> Unit
@@ -53,25 +54,28 @@ fun TopAppBarItem(
         modifier = modifier
             .fillMaxWidth()
             .background(color = Color4553B7)
-            .padding(top = 20.dp)
+            .padding(top = 28.dp)
     ) {
         val (buttonBack, title, borderBottom, buttonNext) = createRefs()
-        IconButton(
-            onClick = { onClick },
-            modifier = modifier.constrainAs(buttonBack) {
-                top.linkTo(parent.top)
-                start.linkTo(parent.start)
-                bottom.linkTo(parent.bottom)
+        if (isShowButtonBack){
+            IconButton(
+                onClick = { onClick },
+                modifier = modifier.constrainAs(buttonBack) {
+                    top.linkTo(parent.top)
+                    start.linkTo(parent.start)
+                    bottom.linkTo(parent.bottom)
+                }
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.button_back),
+                    modifier = modifier
+                        .padding(4.dp)
+                        .fillMaxSize(),
+                    contentDescription = "Button Back"
+                )
             }
-        ) {
-            Image(
-                painter = painterResource(id = R.drawable.button_back),
-                modifier = modifier
-                    .padding(4.dp)
-                    .fillMaxSize(),
-                contentDescription = "Button Back"
-            )
         }
+
         titleTopBar?.let {
             Text(
                 text = titleTopBar,
@@ -115,7 +119,7 @@ fun TopAppBarItem(
                     paddingButton = 1.dp,
                     shadowBottomOffset = 2f
                 ) {
-
+                    onClickNextButton
                 }
             }
 
