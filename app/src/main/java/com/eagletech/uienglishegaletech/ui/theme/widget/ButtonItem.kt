@@ -38,13 +38,11 @@ fun ButtonItem(
             .background(color = shadowColor, shape = shape)
             .fillMaxWidth()
             .height(buttonHeight.dp + shadowBottomOffset.dp)
-            .clickable {
-                onClick()
-            }
+
     ) {
         // Button
         Button(
-            onClick = {},
+            onClick = onClick,
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color.Transparent,
                 contentColor = textColor

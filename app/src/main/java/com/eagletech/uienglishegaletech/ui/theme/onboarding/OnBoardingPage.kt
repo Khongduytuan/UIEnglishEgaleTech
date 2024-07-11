@@ -23,6 +23,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.eagletech.uienglishegaletech.ui.theme.ColorF2564D
 import kotlinx.coroutines.launch
 
@@ -64,8 +65,8 @@ val onBoardingPages = listOf(
 @SuppressLint("UnsafeOptInUsageError", "UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-@Preview
-fun ListOnBoardScreen() {
+
+fun ListOnBoardScreen(navController: NavController) {
     val pagerState = rememberPagerState(pageCount = {
         onBoardingPages.size
     })

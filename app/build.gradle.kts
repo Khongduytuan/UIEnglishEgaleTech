@@ -72,4 +72,6 @@ dependencies {
     implementation (libs.lottie.compose)
     // systemUIController(Color StatusBar)
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
+    // nav controller
+    implementation ("androidx.navigation:navigation-compose:2.4.0-alpha10")
 }

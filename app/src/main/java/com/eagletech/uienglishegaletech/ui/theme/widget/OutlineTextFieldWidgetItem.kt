@@ -24,6 +24,7 @@ import com.eagletech.uienglishegaletech.ui.theme.Color20227E
 import com.eagletech.uienglishegaletech.ui.theme.Color78799C
 
 
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun InputOutlineText(
@@ -33,7 +34,10 @@ fun InputOutlineText(
     hintText: String,
     icon: ImageVector? = null,
     cursorColor: Color,
+    isCentered: Boolean,
+    textAlign: TextAlign,
     onValueChange: (String) -> Unit
+
 ) {
     OutlinedTextField(
         modifier = modifier
